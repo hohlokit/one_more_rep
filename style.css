@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	background-image: url(images/fon.jpg); 
+	height: 8vw;
+	width: 100%;
+}
+.Toplane{
+	width: 80%;
+	display: flex;	
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	font-size:1.8vw;
+	width: 15%;
+	height: 100%;
+	padding-left: 9%;
+	padding-top: 2%;
+}
+.menu{
+	display:flex;
+	height:100%;
+	width:70%;
+	padding-top: 4%;
+	padding-left: 35%;
+	font-size: 1.5vw;
+}
+.punkt{
+	height:55%;
+	width:30%;
+	color:black;
+	
+}
+.slider {
+	width: 90%;
+	height: 35vw;
+	margin: auto;
+	margin-top: 5%;
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+.slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: slide;
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.slide1 { 
+ background-color:red;
+ animation-delay: 30s;
+}
+.slide2 { 
+  background-color:green;
+ animation-delay: 20s;
+}
+.slide3 { 
+ background-color:blue;
+ animation-delay: 10s;
+}
+.slide4 { 
+ background-color:black;
+ animation-delay: 0s;
+}
+@keyframes slide {
+ from {
+  top: 0;
+  left: 0;
+ }
+ 12.5% {
+  transform: translate(0px, 0px);
+ }
+ 25% {
+  transform: translate(-100%, 0);
+ }
+ 36% {
+  transform: translate(-100%, 100%);
+ }
+ 37% {
+  transform: translate(100%, 100%);
+ }
+ 87.5% {
+  transform: translate(100%, 0);
+  
+ }
+ to {
+  transform: (0px, 0px);
+ }
+}
+.Text{
+	display: flex;
+	text-indent:3%;
+	font-size: 2.5vw;
+	margin-right: 15%;
+	padding-top: 10%;
+	text-align: center;
+	height: 15vw;
+	width:100%;
+}
+
+.Last{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 20vw;
+}
+.box{
+	font-size: 1em;
+	width:20%;
+	word-wrap: break-word;
+}
+.content{
+	width:100%;
+	height: 98vw;
+}
+.footer{
+	background-color: lightgray;
+	height:2vw;
+	width:100%;
+	display: flex;
+	justify-content: flex-end;
+}
